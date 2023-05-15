@@ -334,6 +334,7 @@ a{
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    padding: 5px 2px;
 }
  /* .active{
     background-color: #8a82ff;
@@ -472,8 +473,7 @@ a{
         bottom: 0;
         right: 53px;
     }
-    .nav{
-    }
+   
 
     .introText{
         display: flex;
@@ -493,6 +493,7 @@ a{
         flex-direction: row;
         justify-content: end;
         width: fit-content;
+        padding: 5px 2px;
     }
 
     .sectiontwo{
