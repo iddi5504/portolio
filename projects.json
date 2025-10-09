@@ -1,0 +1,163 @@
+[
+    {
+        "title": "Hadaf Academy",
+        "description": "Educational platform for skill development.",
+        "tech": [
+            "Vue",
+            "Vuetify",
+            "Pinia",
+            "Laravel"
+        ],
+        "code": "",
+        "live": "",
+        "images": [
+            {
+                "src": "./assets/hadaf-1.png",
+                "caption": "Course listing and resource center"
+            },
+            {
+                "src": "./assets/hadaf-2.png",
+                "caption": "View various subjects in every academic year"
+            },
+            {
+                "src": "./assets/hadaf-3.png",
+                "caption": "View details of courses and their lectures, assignments, chapters, quizzes and ratings"
+            },
+            {
+                "src": "./assets/hadaf-4.png",
+                "caption": "Each chapter contains video lectures and resources"
+            },
+            {
+                "src": "./assets/hadaf-5.png",
+                "caption": "Create and manage quizzes with auto grading"
+            }
+        ]
+    },
+    {
+        "title": "Accounting System",
+        "description": "Comprehensive accounting system with invoicing, expense tracking, and financial reporting features.",
+        "tech": [
+            "Vue 3",
+            "Chart.js",
+            "OpenStreetMap",
+            "Laravel"
+        ],
+        "code": "",
+        "live": "",
+        "images": [
+            {
+                "src": "./assets/accounting-1.png",
+                "caption": "View invoices in every year, month or day with summary statistics"
+            },
+            {
+                "src": "./assets/accounting-2.png",
+                "caption": "Create and manage wallets, set currency and initial balance"
+            },
+            {
+                "src": "./assets/accounting-3.png",
+                "caption": "Initiate transactions with geolocation tagging"
+            },
+            {
+                "src": "./assets/accounting-4.png",
+                "caption": "View a detailed invoice with itemized list and payment status and print option"
+            },
+            {
+                "src": "./assets/accounting-5.png",
+                "caption": "View live location of employees on map"
+            }
+        ]
+    },
+    {
+        "title": "Carbon Tool",
+        "description": "A complex carbon footprint calculator built with Vue 3 and Tailwind CSS. Features include user carbon emission calculations based on emission sources, data visualization, and personalized recommendations.",
+        "tech": [
+            "NUXT 3",
+            "GTM/GA4",
+            "TypeScript",
+            "Laravel"
+        ],
+        "code": "",
+        "live": "https://carbontool.com/",
+        "images": [
+            {
+                "src": "./assets/carbontool-1.png",
+                "caption": "Book a free consultation or request for a demo"
+            },
+            {
+                "src": "./assets/carbontool-2.png",
+                "caption": "Track carbon emissions from various sources"
+            },
+            {
+                "src": "./assets/carbontool-3.png",
+                "caption": "Create detailed reports with data visualization"
+            }
+        ]
+    },
+    {
+        "title": "iClass",
+        "description": "Quickly create and manage online tests and quizzes with real-time grading and analytics.",
+        "tech": [
+            "Vue",
+            "Firebase",
+            "Realtime"
+        ],
+        "code": "https://github.com/iddi5504/iClass-firebase",
+        "live": "https://iclass-firebase.netlify.app/",
+        "images": [
+            {
+                "src": "./assets/iclass-1.png",
+                "caption": "Login as teacher or student"
+            },
+            {
+                "src": "./assets/iclass-2.png",
+                "caption": "Enter name"
+            },
+            {
+                "src": "./assets/iclass-3.png",
+                "caption": "Create quizzes and select correct answers"
+            },
+            {
+                "src": "./assets/iclass-4.png",
+                "caption": "A code is generated to share with students"
+            },
+            {
+                "src": "./assets/iclass-5.png",
+                "caption": "Find tests using the code provided by the teacher and take the quiz"
+            },
+            {
+                "src": "./assets/iclass-6.png",
+                "caption": "Get marked results instantly"
+            }
+        ]
+    },
+    {
+        "title": "Plug",
+        "description": "Recommendation and discovery platform built with Nuxt. Focus on performance, UX and content discovery.",
+        "tech": [
+            "Nuxt 3",
+            "Firebase",
+            "AWS S3",
+            "GTM/GA4"
+        ],
+        "code": "",
+        "live": "",
+        "images": [
+            {
+                "src": "./assets/plug-1.png",
+                "caption": "Sign up with your google account"
+            },
+            {
+                "src": "./assets/plug-2.png",
+                "caption": "Discovery your new favorite movies and shows"
+            },
+            {
+                "src": "./assets/plug-3.png",
+                "caption": "Make a recommendation for others to see"
+            },
+            {
+                "src": "./assets/plug-4.png",
+                "caption": "Post videos"
+            }
+        ]
+    }
+]

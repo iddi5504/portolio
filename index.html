@@ -1,398 +1,804 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Iddi Yakubu - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Iddi Yakubu - Full Stack Developer. Laravel, PHP, Vue 3, Nuxt, Docker, TypeScript, testing and CI/CD."
+    />
+    <script>
+      window.tailwind = { config: { darkMode: "media" } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/ai-headshot-2.jpeg" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-  <script src="./bootstrap/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-
-</head>
-
-<body>
-  <div class="mainbody d-flex flex-direction-column justify-content-center align-items-start">
-    <div class="nav d-flex flex-direction-row justify-content-between align-items-center">
-      <div class="logo">Portfolio</div>
-      <div class="buttons">
-        <a href="#home" id="homebutton" class="navtext">Home</a>
-        <a href="#skills" id="skillsbutton" class="navtext">Skills</a>
-        <a href="#projects" id="projectsbutton" class="navtext">Projects</a>
-        <a href="#about" id="contactbutton" class="navtext">About</a>
-        <a href="#contact" id="contactbutton" class="navtext">Contact</a>
-      </div>
-    </div>
-
-    <a name="home" id="sectionone"
-      class="sectionone section d-flex flex-direction-row justify-content-start align-items-center">
-      <div class="IntroText">
-        <span style="color: #8a82ff;">Hi, I'm Iddi</span>
-        <h2>I'm a Front-end Developer</h2>
-        <div style="color: #cbcdd3;">
-          I build web apps,wesbites and mobile apps. If you are in need of my service don't hesitate to click the button below
-        </div>
-
-      
-      </div>
-
-
-      <img src="./assets/person.png" class="picture" alt="" srcset="">
-
-
-      <img src="./assets/graph.png" id="graph" alt="">
-    </a>
-    <!-- section two -->
-    <a name="skills" id="sectiontwo" class="sectiontwo section">
-      <div class="skillheader">
-        <h3 style="color: black;">What is my skillset?</h3>
-        <div style="color: black;">
-          During my experience I have acquired these skills
-        </div>
-      </div>
-      <!-- cards -->
-      <div class="skillcards">
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/vue.png" alt="">
-          <h4>Vue Framework</h4>
-          <div class="cardtext">
-            I specialize in the building of web apps using Javascript <b>Vue framework</b>. A powerful tool used for
-            building robust and fast web applications
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/flutter.JPG" alt="">
-          <h4>Flutter</h4>
-          <div class="cardtext">
-            I build fast and performative cross-platform apps with <b>ReacFlutter</b>. A powerful stack used for
-            building quality apps that can run on IOS and Android.
-          </div>
-        </div>
-
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/bootstrap.png" alt="">
-          <h4>Bootstrap</h4>
-          <div class="cardtext">
-            I also have profound skills in using <b>Bootstrap</b> to build responsive website
-          </div>
-        </div>
-        <!-- mor skill cards -->
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/javascript.png" alt="">
-          <h4>Javascript</h4>
-          <div class="cardtext">
-            I use this programming language for making websites responsive and build them with full functionality.
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/firebase.png" alt="">
-          <h4>Firebase</h4>
-          <div class="cardtext">
-            I use this tool to create server backend for apps and websites and also Authentication purpose.
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/github.png" alt="">
-          <h4>Github</h4>
-          <div class="cardtext">
-            I use this tool for publishing my works and projects, and also for contributing in open source
-            projects.
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/html.png" alt="">
-          <h4>HTML</h4>
-          <div class="cardtext">
-            I use this language for creating Websites.
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/figma.png" alt="">
-          <h4>Figma</h4>
-          <div class="cardtext">
-            As a frontend developer, I use figma to create mock ups and designing UI/UX
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/sass.png" alt="">
-          <h4>Sass</h4>
-          <div class="cardtext">
-            I use this framework to easily write clean css code fast
-          </div>
-        </div>
-        <div class="skillcard">
-          <img class="cardimage" src="./assets/tailwind.png" alt="">
-          <h4>Tailwind</h4>
-          <div class="cardtext">
-            A utility-first CSS framework I use to easily build UI
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <!-- section three -->
-    <div name="projects" id="sectionthree" class="sectionthree section">
-      <!-- project one -->
-      <a name="projects"></a>
-      <div class=" project">
-        <div class="projectheader">
-          <h2>iClass</h2>
+  <body
+    class="antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+  >
+    <header
+      class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-sm dark:bg-gray-900/60 border-b border-gray-200 dark:border-gray-800"
+    >
+      <div
+        class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="#home" class="flex items-center gap-3">
+          <img
+            src="./assets/ai-headshot-2.jpeg"
+            alt=""
+            class="w-10 h-10 rounded-full object-cover"
+          />
           <div>
-            An app where teachers can create tests for their students to answer. It was built with Vue js and firebase
-            as backend. Teachers can create account and start creating test. Share test codes to student and recieive
-            marked submissions with score
-          </div>
-          <a target="_blank" href="https://github.com/iddi5504/iClass-firebase"><button class="hirebutton">See
-              code</button>
-          </a>
-          <a target="_blank" href="https://iclass-firebase.netlify.app/"><button class="hirebutton"> Visit</button></a>
-
-
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/iclass2.jpg" alt="First slide">
-            </div>
-
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/iclass3.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/iclass4.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/iclass5.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/iclass6.jpg" alt="Third slide">
-            </div>
-
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-
-      </div>
-
-
-
-      <!-- project two -->
-      <div class="project flex-row-reverse" id="projects">
-        <div class="projectheader">
-          <h3>TechTress</h3>
-          <div>
-            A website aimed at at providing technogical knowledge and oppotunities to the less
-            privileged youth.
-          </div>
-          <button class="hirebutton"><a target="_blank" href="https://github.com/iddi5504/Project-NewGen">See
-              code</a></button>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/ngo1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/ngo2.jpg" alt="First slide">
+            <div class="text-lg font-semibold text-indigo-600">Iddi Yakubu</div>
+            <div class="text-xs text-gray-600 dark:text-gray-300">
+              Full Stack Developer
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-          </a>
-        </div>
-      </div>
-      <!-- new project-->
-      <div class="project flex-row" id="projects">
-        <div class="projectheader">
-          <h3>Todo App</h3>
-          <div>
-            A simple Todo App I built with VUEX and firebase on my free time. Todos are saved to a backend server and
-            anyone can add a todo
-          </div>
-          <a target="_blank" href="https://github.com/iddi5504/todo-app"><button class="hirebutton">See
-              code</button></a>
-          <a target="_blank" href="https://iddistodo.netlify.app/"><button class="hirebutton"> Visit</button></a>
-        </div>
-        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/todo1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/todo2.jpg" alt="First slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-          </a>
-        </div>
-      </div>
-      <!-- new project-->
-      <div class="project flex-row-reverse" id="projects">
-        <div class="projectheader">
-          <h3>Binge Anime Landing page</h3>
-          <div>
-            A simple landing page for an anime streamig platform
-          </div>
-          <a target="_blank" href="https://github.com/iddi5504/todo-app"><button class="hirebutton">See
-              code</button></a>
-          <a target="_blank" href="https://bingeanime.netlify.app/"><button class="hirebutton"> Visit</button></a>
-        </div>
-        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/binge1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/binge2.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/binge3.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/binge4.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/binge5.jpg" alt="First slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-          </a>
-        </div>
-      </div>
-      <!-- project tthree -->
-      <div class=" project d-flex flex-row">
-        <div class="projectheader">
-          <h3>Plug</h3>
-          <div>
-            A blog website where users can recommend movies,music,podcasts and many more to the world. Users can also
-            ask for recommendations from friends. It is built with Nuxt js , Sass, and firebase. Development is still in
-            progress.
-          </div>
-        </div>
-        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/plug1.jpg" alt="First slide">
-            </div>
-
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug2.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug3.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug4.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug5.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug6.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug7.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/plug8.jpg" alt="Third slide">
-            </div>
-
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- section four -->
-    <div name="about" id="about" class="sectionfour section">
-      <img class="gif" src="./assets/gif.gif" alt="">
-      <div>
-        <h4>About Iddi</h4>
-        <h2 style="color:#8a82ff">A Passionate Web Developer</h2>
-        <div class="aboutme">I have been developing apps and webapps since 2018 and I'm always looking
-          to expand my skill-set and grow. I am willing to offer the world with my skills in web development. I can create interactive websites , full-fledged web apps,
-          cross-platform apps and others. I have worked with a number of start-ups and have help build massive web apps
-          with frameworks like vue and flutter and these projects turned out to be quite successful. I am at your
-          service
-        </div>
-      </div>
-    </div>
-    <!-- section five -->
-    <div class="sectionfive section" id="contact">
-      <div class="d-flex flex-column align-items-center ">
-        <img src="./assets/gmail.png" class="contact-logo" alt="">
-        <h3>Gmail</h3>
-        <h4>iddi5504@gmail.com</h4>
-      </div>
-  
-      <div class="d-flex flex-column align-items-center">
-        <a target="_blank" href="https://twitter.com/iddi5504">
-          <img src="./assets/twitter.png" class="contact-logo" alt="">
         </a>
-        <h3>Twitter</h3>
-        <h4>@iddi5504</h4>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#home" class="hover:text-indigo-600">Home</a>
+          <a href="#skills" class="hover:text-indigo-600">Skills</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button
+            aria-label="Toggle menu"
+            class="p-2 rounded-md bg-gray-100 dark:bg-gray-800"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="d-flex flex-column align-items-center">
-        <a target="_blank" href="https://github.com/iddi5504">
-          <img src="./assets/github.png" class="contact-logo-github contact-logo" alt="">
-        </a>
-        <h3>Github</h3>
-        <h4>@iddi5504</h4>
+      <div id="mobileMenu" class="md:hidden max-w-6xl mx-auto px-6 pb-4 hidden">
+        <div class="flex flex-col gap-3">
+          <a href="#home" class="block py-2">Home</a>
+          <a href="#skills" class="block py-2">Skills</a>
+          <a href="#projects" class="block py-2">Projects</a>
+          <a href="#about" class="block py-2">About</a>
+          <a href="#contact" class="block py-2">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-28">
+      <section id="home" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-indigo-500 font-medium mb-2">Hello, I am</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+              Iddi Yakubu
+            </h1>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+              Full Stack Developer specializing in Laravel, PHP, Vue 3, Nuxt,
+              Docker and TypeScript. I build scalable web applications, ship
+              reliable features with automated tests, and maintain robust CI/CD
+              pipelines.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                class="inline-block bg-indigo-600 text-white px-5 py-3 rounded-lg shadow hover:bg-indigo-700"
+                >View Work</a
+              >
+              <a
+                href="#contact"
+                class="inline-block border border-gray-300 dark:border-gray-700 px-5 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                >Get in touch</a
+              >
+            </div>
+            <div
+              class="mt-6 flex gap-3 flex-wrap text-sm text-gray-600 dark:text-gray-300"
+            >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >Laravel</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >Vue 3</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >Nuxt</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >Docker</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >TypeScript</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >Testing</span
+              >
+              <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
+                >CI/CD</span
+              >
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="rounded-xl overflow-hidden shadow-xl bg-gradient-to-tr from-indigo-50 to-white dark:from-indigo-900/40 dark:to-transparent p-6"
+            >
+              <img
+                src="./assets/ai-headshot-2.jpeg"
+                alt="Iddi"
+                class="h-64 m-auto object-fit rounded-lg mb-4"
+              />
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-sm text-gray-500 dark:text-gray-300">
+                    Currently available for freelance and remote roles
+                  </div>
+                  <div class="font-medium mt-1">
+                    Open to contracts and full-time
+                  </div>
+                </div>
+                <div class="text-xs text-gray-500 dark:text-gray-400">
+                  Based in Accra, Ghana
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <h2 class="text-3xl font-bold mb-2">Core skills</h2>
+            <p class="text-gray-600 dark:text-gray-300">
+              End-to-end engineering from backend systems to frontend
+              experiences and platform automation.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">Backend - PHP & Laravel</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Designing APIs, domain models, database schemas and performant
+                server code.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Eloquent</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Queues</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Jobs</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Inertia</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Blade</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">Frontend - Vue 3 & Nuxt</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Component driven UI, state management, SSR and static site
+                generation with Nuxt.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Composition API</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Pinia</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >SSR</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Vite</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">Platform - Docker & CI/CD</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Containerized development and automated pipelines that ensure
+                reliable, repeatable releases.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Docker</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >GitHub Actions</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >CI</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >CD</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">TypeScript & Tooling</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Type-safe codebases and developer experience enhancements across
+                frontend and backend.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >TypeScript</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >ESLint</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Prettier</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">Testing & Quality</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Automated tests to reduce regressions and maintain trust during
+                rapid delivery.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >PHPUnit</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Vitest</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Cypress</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm"
+            >
+              <h3 class="font-semibold mb-2">Architecture & Best practices</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Maintainable code, observability, and pragmatic trade-offs for
+                production systems.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Clean Code</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >TDD</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >GTM/GA4</span
+                >
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded"
+                  >Monitoring</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2">Selected projects</h2>
+            <p class="text-gray-600 dark:text-gray-300">
+              Practical work that demonstrates system design, frontend UX and
+              end-to-end delivery.
+            </p>
+          </div>
+
+          <div
+            id="projectsGrid"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          ></div>
+
+          <div class="mt-12 text-center">
+            <a
+              href="#contact"
+              class="inline-block bg-indigo-600 text-white px-5 py-3 rounded-lg"
+              >Hire me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-white dark:bg-gray-900 py-16">
+        <div
+          class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+        >
+          <div class="md:col-span-1">
+            <img
+              src="./assets/gif.gif"
+              alt="About"
+              class="rounded-lg w-full object-cover shadow"
+            />
+          </div>
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold mb-3">About me</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              I build end-to-end products with a pragmatic engineering approach.
+              My work covers backend architecture, frontend engineering and
+              platform automation. I prioritize clarity, testing and repeatable
+              delivery pipelines to ensure features are production-ready.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              I have been developing professionally since 2018. My day-to-day
+              includes designing APIs, writing maintainable TypeScript and PHP,
+              shipping tests, and configuring CI/CD workflows to keep releases
+              fast and safe.
+            </p>
+            <div class="flex gap-3">
+              <a
+                href="#contact"
+                class="px-4 py-2 bg-indigo-600 text-white rounded"
+                >Work with me</a
+              >
+              <a
+                href="https://github.com/iddi5504"
+                target="_blank"
+                class="px-4 py-2 border rounded border-gray-200 dark:border-gray-700"
+                >View GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-2">Contact</h2>
+            <p class="text-gray-600 dark:text-gray-300">
+              Available for remote and contract roles. Reach out to discuss your
+              project.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="p-6 rounded-lg border bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-center"
+            >
+              <img
+                src="./assets/gmail.png"
+                class="w-14 mx-auto mb-3"
+                alt="Email"
+              />
+              <div class="font-semibold">Email</div>
+              <div class="text-sm text-gray-600 dark:text-gray-300">
+                iddi5504@gmail.com
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg border bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-center"
+            >
+              <a href="http://x.com/__ed___________" target="_blank">
+                <img
+                  src="./assets/twitter.png"
+                  class="w-14 mx-auto mb-3"
+                  alt="Twitter"
+                />
+              </a>
+              <div class="font-semibold">Twitter</div>
+              <div class="text-sm text-gray-600 dark:text-gray-300">
+                @iddi5504
+              </div>
+            </div>
+
+            <div
+              class="p-6 rounded-lg border bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-center"
+            >
+              <a href="https://github.com/iddi5504" target="_blank">
+                <img
+                  src="./assets/github.png"
+                  class="w-14 mx-auto mb-3"
+                  alt="GitHub"
+                />
+              </a>
+              <div class="font-semibold">GitHub</div>
+              <div class="text-sm text-gray-600 dark:text-gray-300">
+                @iddi5504
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-6 text-center text-sm text-gray-500 dark:text-gray-400"
+      >
+        © 2025 Iddi Yakubu. All rights reserved.
+      </div>
+    </footer>
+
+    <div
+      id="projectModal"
+      aria-hidden="true"
+      class="fixed inset-0 z-60 flex items-center justify-center px-4 py-8 pointer-events-none"
+    >
+      <div
+        id="modalBackdrop"
+        class="absolute inset-0 bg-black/60 opacity-0 transition-opacity"
+      ></div>
+
+      <div
+        id="modalPanel"
+        role="dialog"
+        aria-modal="true"
+        class="relative hidden w-full max-w-5xl mx-auto transform scale-95 opacity-0 transition-all duration-200 pointer-events-auto"
+      >
+        <div class="rounded-lg overflow-hidden shadow-2xl">
+          <div class="relative bg-gray-900 text-white">
+            <button
+              id="modalClose"
+              class="absolute right-3 top-3 z-20 p-2 rounded-md bg-black/40 hover:bg-black/50"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="relative bg-black flex flex-col">
+                <img
+                  id="modalImage"
+                  src=""
+                  alt=""
+                  class="w-full object-fit transition-opacity duration-200"
+                />
+                <button
+                  id="prevBtn"
+                  class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 hover:bg-black/50"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M15 18l-6-6 6-6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  id="nextBtn"
+                  class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 hover:bg-black/50"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 6l6 6-6 6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="p-6 bg-gray-900">
+                <h3 id="modalTitle" class="text-2xl font-semibold mb-3"></h3>
+                <p id="modalDescription" class="text-sm text-gray-200 mb-4"></p>
+                <div id="modalTech" class="flex flex-wrap gap-2 mb-4"></div>
+
+                <div
+                  id="modalThumbnails"
+                  class="flex gap-2 overflow-x-auto px-4 pl-2 py-3 bg-gray-900/60"
+                ></div>
+
+                <small>Image caption</small>
+                <div
+                  id="modalImageCaption"
+                  class="text-sm text-gray-200 px-4 pl-2 py-2"
+                ></div>
+
+                <div class="mt-4 flex gap-3">
+                  <a
+                    id="modalCodeLink"
+                    href="#"
+                    target="_blank"
+                    class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hidden"
+                    >See code</a
+                  >
+                  <a
+                    id="modalLiveLink"
+                    href="#"
+                    target="_blank"
+                    class="inline-block px-4 py-2 border border-white rounded hidden"
+                    >Live demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-  </div>
-  <script src="script.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
 
-</body>
+      const projectsGrid = document.getElementById("projectsGrid");
+      const modal = document.getElementById("projectModal");
+      const backdrop = document.getElementById("modalBackdrop");
+      const panel = document.getElementById("modalPanel");
+      const modalImage = document.getElementById("modalImage");
+      const modalImageCaption = document.getElementById("modalImageCaption");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalTech = document.getElementById("modalTech");
+      const modalThumbnails = document.getElementById("modalThumbnails");
+      const modalClose = document.getElementById("modalClose");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const codeLink = document.getElementById("modalCodeLink");
+      const liveLink = document.getElementById("modalLiveLink");
 
+      let projects = [];
+      let currentProject = null;
+      let currentIndex = 0;
+
+      function shorten(text, length = 100) {
+        if (!text) return "";
+        if (text.length <= length) return text;
+        return text.slice(0, length).trim() + "...";
+      }
+
+      function renderProjectCard(proj, i) {
+        const card = document.createElement("div");
+        card.className =
+          "project-card p-6 rounded-lg border bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 shadow-sm cursor-pointer hover:shadow-md transition";
+        card.tabIndex = 0;
+        card.dataset.index = String(i);
+
+        const inner = document.createElement("div");
+        inner.className = "flex items-start gap-4";
+
+        const thumb = document.createElement("img");
+        thumb.src = proj.images?.[0]?.src || "";
+        thumb.alt = proj.title;
+        thumb.className = "w-28 h-20 object-cover rounded";
+
+        const meta = document.createElement("div");
+
+        const h3 = document.createElement("h3");
+        h3.className = "text-xl font-semibold mb-1";
+        h3.textContent = proj.title;
+
+        const p = document.createElement("p");
+        p.className =
+          "text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-3";
+        p.textContent = shorten(proj.description, 100);
+
+        const tagWrap = document.createElement("div");
+        tagWrap.className = "flex gap-2 flex-wrap text-xs";
+
+        if (Array.isArray(proj.tech)) {
+          proj.tech.forEach((t) => {
+            const span = document.createElement("span");
+            span.className =
+              "px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-gray-800 dark:text-gray-200";
+            span.textContent = t;
+            tagWrap.appendChild(span);
+          });
+        }
+
+        meta.appendChild(h3);
+        meta.appendChild(p);
+        meta.appendChild(tagWrap);
+
+        inner.appendChild(thumb);
+        inner.appendChild(meta);
+        card.appendChild(inner);
+
+        card.addEventListener("click", () => openModal(i));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openModal(i);
+          }
+        });
+
+        return card;
+      }
+
+      function populateGrid() {
+        projectsGrid.innerHTML = "";
+        projects.forEach((p, i) => {
+          const card = renderProjectCard(p, i);
+          projectsGrid.appendChild(card);
+        });
+      }
+
+      function updateModalImage() {
+        const imgObj = currentProject.images[currentIndex];
+        modalImage.src = imgObj.src || "";
+        modalImage.alt = imgObj.caption || "";
+        modalImageCaption.textContent = imgObj.caption || "";
+        Array.from(modalThumbnails.children).forEach((thumb, i) => {
+          thumb.classList.toggle("ring-2", i === currentIndex);
+        });
+      }
+
+      function openModal(index) {
+        panel.classList.toggle("hidden", false);
+        modalThumbnails.innerHTML = "";
+        modalTech.innerHTML = "";
+        currentProject = projects[index];
+        currentIndex = 0;
+        modalTitle.textContent = currentProject.title;
+        modalDescription.textContent = currentProject.description;
+        (currentProject.tech || []).forEach((t) => {
+          const s = document.createElement("span");
+          s.className = "px-2 py-1 bg-white/10 rounded text-xs";
+          s.innerText = t;
+          modalTech.appendChild(s);
+        });
+
+        (currentProject.images || []).forEach((img, i) => {
+          const thumb = document.createElement("img");
+          thumb.src = img.src;
+          thumb.alt = img.caption || "";
+          thumb.className =
+            "w-20 h-12 object-cover rounded cursor-pointer opacity-80 hover:opacity-100";
+          thumb.addEventListener("click", () => {
+            currentIndex = i;
+            updateModalImage();
+          });
+          modalThumbnails.appendChild(thumb);
+        });
+
+        if (currentProject.code) {
+          codeLink.href = currentProject.code;
+          codeLink.classList.remove("hidden");
+        } else {
+          codeLink.classList.add("hidden");
+        }
+
+        if (currentProject.live) {
+          liveLink.href = currentProject.live;
+          liveLink.classList.remove("hidden");
+        } else {
+          liveLink.classList.add("hidden");
+        }
+
+        updateModalImage();
+
+        modal.classList.remove("pointer-events-none");
+        setTimeout(() => {
+          backdrop.classList.remove("opacity-0");
+          backdrop.classList.add("opacity-100");
+          panel.classList.remove("scale-95", "opacity-0");
+          panel.classList.add("scale-100", "opacity-100");
+          modal.setAttribute("aria-hidden", "false");
+        }, 10);
+      }
+
+      function closeModal() {
+        panel.classList.toggle("hidden", true);
+        backdrop.classList.remove("opacity-100");
+        backdrop.classList.add("opacity-0");
+        panel.classList.remove("scale-100", "opacity-100");
+        panel.classList.add("scale-95", "opacity-0");
+        modal.setAttribute("aria-hidden", "true");
+        setTimeout(() => {
+          modal.classList.add("pointer-events-none");
+        }, 200);
+      }
+
+      prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!currentProject) return;
+        currentIndex =
+          (currentIndex - 1 + currentProject.images.length) %
+          currentProject.images.length;
+        updateModalImage();
+      });
+
+      nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!currentProject) return;
+        currentIndex = (currentIndex + 1) % currentProject.images.length;
+        updateModalImage();
+      });
+
+      modalClose.addEventListener("click", closeModal);
+      backdrop.addEventListener("click", closeModal);
+
+      document.addEventListener("keydown", (e) => {
+        if (modal.getAttribute("aria-hidden") === "false") {
+          if (e.key === "Escape") closeModal();
+          if (e.key === "ArrowLeft") {
+            currentIndex =
+              (currentIndex - 1 + currentProject.images.length) %
+              currentProject.images.length;
+            updateModalImage();
+          }
+          if (e.key === "ArrowRight") {
+            currentIndex = (currentIndex + 1) % currentProject.images.length;
+            updateModalImage();
+          }
+        }
+      });
+
+      fetch("./projects.json")
+        .then((r) => {
+          if (!r.ok) throw new Error("Failed to load projects.json");
+          return r.json();
+        })
+        .then((data) => {
+          projects = data;
+          populateGrid();
+        })
+        .catch((err) => {
+          projectsGrid.innerHTML =
+            '<div class="text-center text-red-500">Could not load projects. Check projects.json path.</div>';
+        });
+    </script>
+  </body>
 </html>
