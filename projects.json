@@ -98,6 +98,10 @@
         "live": "https://carbontool.com/",
         "images": [
             {
+                "src": "./assets/carbontool-4.png",
+                "caption": "Login into your account to get started"
+            },
+            {
                 "src": "./assets/carbontool-1.png",
                 "caption": "Book a free consultation or request for a demo"
             },
