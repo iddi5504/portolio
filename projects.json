@@ -102,6 +102,22 @@
                 "caption": "Login into your account to get started"
             },
             {
+                "src": "./assets/carbontool-7.png",
+                "caption": "An analytics overview of your carbon emissions"
+            },
+            {
+                "src": "./assets/carbontool-8.png",
+                "caption": "Get personalized recommendations to reduce your carbon footprint"
+            },
+            {
+                "src": "./assets/carbontool-9.png",
+                "caption": "Manage entities and users in your organization"
+            },
+            {
+                "src": "./assets/carbontool-1.png",
+                "caption": "Book a free consultation or request for a demo"
+            },
+            {
                 "src": "./assets/carbontool-1.png",
                 "caption": "Book a free consultation or request for a demo"
             },
