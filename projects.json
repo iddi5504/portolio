@@ -1,5 +1,45 @@
 [
     {
+        "title": "MoneyBridge",
+        "description": "Recieve paypal, remitly, bank and other payments directly to your mobile money account.",
+        "tech": [
+            "Vue 3",
+            "Laravel",
+            "Inertia.js",
+            "CloudFlare",
+            "MySQL",
+            "Tailwind CSS"
+        ],
+        "code": "https://github.com/iddi5504/azaman-laravel",
+        "live": "http://165.232.141.48/",
+        "images": [
+            {
+                "src": "./assets/moneybridge-1.png",
+                "caption": "Receive payments directly to your mobile money account"
+            },
+            {
+                "src": "./assets/moneybridge-2.png",
+                "caption": "View transaction history and details"
+            },
+            {
+                "src": "./assets/moneybridge-3.png",
+                "caption": "View list of available payment cards"
+            },
+            {
+                "src": "./assets/moneybridge-4.png",
+                "caption": "Start a transaction to send payment"
+            },
+            {
+                "src": "./assets/moneybridge-5.png",
+                "caption": "View submitted payment proofs"
+            },
+            {
+                "src": "./assets/moneybridge-6.png",
+                "caption": "Profile settings and customization options"
+            }
+        ]
+    },
+    {
         "title": "YouTube scroll saver",
         "description": "A browser extension that saves your YouTube scroll position.",
         "tech": [
@@ -165,36 +205,6 @@
             {
                 "src": "./assets/iclass-6.png",
                 "caption": "Get marked results instantly"
-            }
-        ]
-    },
-    {
-        "title": "Plug",
-        "description": "Recommendation and discovery platform built with Nuxt. Focus on performance, UX and content discovery.",
-        "tech": [
-            "Nuxt 3",
-            "Firebase",
-            "AWS S3",
-            "GTM/GA4"
-        ],
-        "code": "",
-        "live": "",
-        "images": [
-            {
-                "src": "./assets/plug-1.png",
-                "caption": "Sign up with your google account"
-            },
-            {
-                "src": "./assets/plug-2.png",
-                "caption": "Discovery your new favorite movies and shows"
-            },
-            {
-                "src": "./assets/plug-3.png",
-                "caption": "Make a recommendation for others to see"
-            },
-            {
-                "src": "./assets/plug-4.png",
-                "caption": "Post videos"
             }
         ]
     }
