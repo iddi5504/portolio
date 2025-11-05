@@ -93,7 +93,7 @@
     },
     {
         "title": "Accounting System",
-        "description": "Comprehensive accounting system with invoicing, expense tracking, and financial reporting features.",
+        "description": "Comprehensive multi-tenant accounting system with invoicing, expense tracking, and financial reporting features.",
         "tech": [
             "Vue 3",
             "Chart.js",
@@ -103,6 +103,10 @@
         "code": "",
         "live": "",
         "images": [
+            {
+                "src": "./assets/accounting-7.png",
+                "caption": "Dashboard with financial overview and recent activities"
+            },
             {
                 "src": "./assets/accounting-1.png",
                 "caption": "View invoices in every year, month or day with summary statistics"
